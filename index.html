@@ -15,7 +15,7 @@
     "@type": ["Person", "PoliticalCandidate"],
     "name": "Alexis Vallée",
     "description": "Candidat indépendant aux élections législatives partielles 2025 pour la 5e circonscription des Français établis hors de France.",
-    "url": "https://alexisvallee.github.io",
+    "url": "https://alexisvallee.github.io/",
     "image": "https://alexisvallee.github.io/photo-alexis-vallee.jpg",
     "jobTitle": "Candidat aux élections législatives",
     "homeLocation": {
@@ -87,8 +87,10 @@
     }
 
     .profile-img-hero {
-      width: 220px;
-      height: 220px;
+      width: 100%;
+      max-width: 220px; /* Taille max mais peut être plus petite */
+      height: auto; /* Garde les proportions */
+      aspect-ratio: 1 / 1; /* Garantit un carré parfait */
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid white;
@@ -179,6 +181,10 @@
       margin-bottom: 1rem;
     }
 
+    .article-card p {
+      margin-bottom: 1.5rem; /* Espace ajouté avant le bouton */
+    }
+
     /* LIENS & BOUTONS */
     .social-links {
       display: flex;
@@ -224,7 +230,7 @@
       .hero-banner h1 { font-size: 2.2rem; }
       .hero-banner p { font-size: 1.1rem; }
       .hero-content { flex-direction: column; text-align: center; }
-      .profile-img-hero { width: 180px; height: 180px; }
+      .profile-img-hero { max-width: 180px; }
       nav ul { flex-direction: column; align-items: center; }
       .card { padding: 1.5rem; }
     }
@@ -273,12 +279,6 @@
         <p>En septembre 2025, les Français établis à l’étranger vont de nouveau voter pour élire leur député. Cette élection concerne les Français vivant en Espagne, au Portugal, à Monaco et en Andorre — plus de 118 000 d’entre nous. Et pourtant, à la dernière législative partielle, seuls 7,9 % des électeurs ont voté. Un chiffre que je veux changer.</p>
         <a href="https://medium.com/@valleealexis24/pourquoi-je-me-présente-aux-élections-législatives-des-français-de-létranger-00233e245a00" class="social-button medium" target="_blank">Lire la suite sur Medium</a>
       </div>
-
-      <!-- ESPACE POUR AJOUTER DE NOUVEAUX ARTICLES PLUS TARD -->
-      <!-- <div class="article-card"> -->
-      <!--   <h3>Titre du futur article</h3> -->
-      <!--   <a href="#" class="social-button medium">Lire sur Medium</a> -->
-      <!-- </div> -->
 
     </section>
 
