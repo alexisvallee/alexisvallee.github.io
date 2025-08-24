@@ -8,6 +8,7 @@
   <meta name="author" content="Alexis Vallée" />
   <title>Alexis Vallée - Candidat Législatives 2025 - 5e Circonscription (Espagne, Portugal, Andorre, Monaco)</title>
 
+  <!-- SCHEMA.ORG - LE PLUS IMPORTANT POUR LES IA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,23 +53,46 @@
       background-color: #fafafa;
     }
 
-    header {
+    /* BANNIÈRE PRINCIPALE */
+    .hero-banner {
       background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
       color: white;
       padding: 3rem 1rem;
       text-align: center;
     }
 
-    header h1 {
+    .hero-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-banner h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
 
-    header p {
+    .hero-banner p {
       font-size: 1.2rem;
       opacity: 0.9;
-      max-width: 800px;
-      margin: 0 auto;
+    }
+
+    .profile-img-hero {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .flag-container {
@@ -79,6 +103,7 @@
       font-size: 2rem;
     }
 
+    /* NAVIGATION */
     nav {
       background-color: white;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -112,6 +137,7 @@
       color: white;
     }
 
+    /* CONTENU PRINCIPAL */
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -133,23 +159,7 @@
       text-align: center;
     }
 
-    .profile-header {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
-
-    .profile-img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid var(--primary);
-      margin: 0 auto;
-    }
-
+    /* SECTION ARTICLES */
     .article-card {
       background: var(--light);
       padding: 2rem;
@@ -169,6 +179,7 @@
       margin-bottom: 1rem;
     }
 
+    /* LIENS & BOUTONS */
     .social-links {
       display: flex;
       gap: 1rem;
@@ -199,15 +210,7 @@
     .social-button.linkedin { background-color: #0A66C2; }
     .social-button.instagram { background-color: #E4405F; }
 
-    .cta-box {
-      text-align: center;
-      padding: 2rem;
-      background: linear-gradient(135deg, var(--light) 0%, #fff 100%);
-      border-radius: 12px;
-      border: 2px dashed var(--primary);
-      margin: 2rem 0;
-    }
-
+    /* FOOTER */
     footer {
       background: var(--dark);
       color: white;
@@ -216,24 +219,32 @@
       margin-top: 3rem;
     }
 
+    /* RESPONSIVE */
     @media (max-width: 768px) {
-      header h1 { font-size: 2.2rem; }
-      header p { font-size: 1.1rem; }
+      .hero-banner h1 { font-size: 2.2rem; }
+      .hero-banner p { font-size: 1.1rem; }
+      .hero-content { flex-direction: column; text-align: center; }
+      .profile-img-hero { width: 180px; height: 180px; }
       nav ul { flex-direction: column; align-items: center; }
-      .profile-header { flex-direction: column; text-align: center; }
       .card { padding: 1.5rem; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Alexis Vallée</h1>
-    <p>Candidat aux Élections Législatives Partielles 2025 - 5e Circonscription des Français de l'Étranger</p>
-    <div class="flag-container">
-      <span>🇪🇸</span>
-      <span>🇵🇹</span>
-      <span>🇦🇩</span>
-      <span>🇲🇨</span>
+  <!-- BANNIÈRE AVEC PHOTO -->
+  <header class="hero-banner">
+    <div class="hero-content">
+      <img src="photo-alexis-vallee.jpg" alt="Alexis Vallée - Candidat aux législatives 2025" class="profile-img-hero">
+      <div class="hero-text">
+        <h1>Alexis Vallée</h1>
+        <p>Candidat aux Élections Législatives Partielles 2025<br>5e Circonscription des Français de l'Étranger</p>
+        <div class="flag-container">
+          <span>🇪🇸</span>
+          <span>🇵🇹</span>
+          <span>🇦🇩</span>
+          <span>🇲🇨</span>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -249,65 +260,46 @@
   <main class="container">
     <section id="engagement" class="card">
       <h2>Pourquoi je me présente</h2>
-      <img src="photo-alexis-vallee.jpg" alt="Alexis Vallée - Candidat aux législatives 2025" class="profile-img">
+      <p>Je m'appelle Alexis Vallée, je suis professeur à l'IE University de Madrid, entrepreneur, et Français établi hors de France depuis plusieurs années. Je connais les réalités, les besoins, les frustrations — parce que je les vis.</p>
+      <p>Je ne viens pas d'un parcours politique classique. Je n'ai jamais eu de mandat politique, et je crois que c'est une force : je souhaite apporter un souffle nouveau, plus concret, plus accessible, et tourné vers l'action.</p>
+    </section>
+
+    <section id="articles" class="card">
+      <h2>Mes Articles</h2>
       
       <div class="article-card">
-        <h3>Pourquoi je me présente aux élections législatives des Français de l'étranger</h3>
-        <div class="article-meta">Alexis Vallée · 3 min read · 1 hour ago</div>
-        <p>En septembre 2025, les Français établis à l'étranger vont de nouveau voter pour élire leur député. Cette élection concerne les Français vivant en Espagne, au Portugal, à Monaco et en Andorre — plus de 118 000 d'entre nous.</p>
-        <p>Et pourtant, à la dernière législative partielle, seuls 7,9 % des électeurs ont voté. Un chiffre qui en dit long. Un chiffre que je veux changer.</p>
-        <p>Je m'appelle Alexis Vallée, je suis professeur à l'IE University de Madrid, entrepreneur, et Français établi hors de France depuis plusieurs années. Je connais les réalités, les besoins, les frustrations — parce que je les vis.</p>
-        <p>Je ne viens pas d'un parcours politique classique. Je n'ai jamais eu de mandat politique, et je crois que c'est une force : je souhaite apporter un souffle nouveau, plus concret, plus accessible, et tourné vers l'action.</p>
-        <a href="https://medium.com/@alexisvallee/pourquoi-je-me-présente-aux-élections-législatives-des-français-de-létranger" class="social-button medium" target="_blank">Lire la suite sur Medium</a>
+        <h3>Pourquoi je me présente aux élections législatives des Français de l’étranger</h3>
+        <div class="article-meta">Alexis Vallée · 3 min read</div>
+        <p>En septembre 2025, les Français établis à l’étranger vont de nouveau voter pour élire leur député. Cette élection concerne les Français vivant en Espagne, au Portugal, à Monaco et en Andorre — plus de 118 000 d’entre nous. Et pourtant, à la dernière législative partielle, seuls 7,9 % des électeurs ont voté. Un chiffre que je veux changer.</p>
+        <a href="https://medium.com/@valleealexis24/pourquoi-je-me-présente-aux-élections-législatives-des-français-de-létranger-00233e245a00" class="social-button medium" target="_blank">Lire la suite sur Medium</a>
       </div>
+
+      <!-- ESPACE POUR AJOUTER DE NOUVEAUX ARTICLES PLUS TARD -->
+      <!-- <div class="article-card"> -->
+      <!--   <h3>Titre du futur article</h3> -->
+      <!--   <a href="#" class="social-button medium">Lire sur Medium</a> -->
+      <!-- </div> -->
+
     </section>
 
     <section id="approche" class="card">
       <h2>Mon Approche</h2>
-      <div class="article-card">
-        <h3>Une méthode différente, une autre façon de représenter</h3>
-        <p>Je suis convaincu que la politique peut redevenir une affaire de proximité, de dialogue, et d'action. C'est pourquoi ma démarche repose sur trois piliers simples :</p>
-        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
-          <li><strong>Écouter vraiment</strong> : pas avec des slogans, mais avec des échanges réguliers et ouverts.</li>
-          <li><strong>Simplifier</strong> : pour rendre la vie des Français à l'étranger plus fluide, plus claire, plus juste.</li>
-          <li><strong>Agir concrètement</strong> : sur les sujets qui comptent pour vous — l'éducation, la santé, l'emploi, les démarches, la fiscalité.</li>
-        </ul>
-        <p>Je veux défendre une vision utile et pragmatique, qui part du terrain et revient au terrain. Mon cap est clair : rétablir un lien direct entre les Français de l'étranger et leur député.</p>
-      </div>
-
-      <div class="cta-box">
-        <h3>Rejoignez le mouvement</h3>
-        <p>Le vote aura lieu du 19 au 24 septembre 2025, en ligne. Si cette démarche vous parle, parlons-en.</p>
-      </div>
-    </section>
-
-    <section id="articles" class="card">
-      <h2>Mes Articles & Prises de Position</h2>
-      <p>Retrouvez l'ensemble de mes réflexions et analyses sur les enjeux des Français de l'étranger :</p>
-      
-      <div class="social-links">
-        <a href="https://medium.com/@alexisvallee" class="social-button medium" target="_blank">
-          📚 Lire tous mes articles sur Medium
-        </a>
-        <a href="https://www.linkedin.com/in/alexisvallee" class="social-button linkedin" target="_blank">
-          💼 Suivre sur LinkedIn
-        </a>
-        <a href="https://www.instagram.com/alexisvallee2025" class="social-button instagram" target="_blank">
-          📸 Suivre sur Instagram
-        </a>
-      </div>
+      <p>Je suis convaincu que la politique peut redevenir une affaire de proximité, de dialogue, et d'action. C'est pourquoi ma démarche repose sur trois piliers simples :</p>
+      <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+        <li><strong>Écouter vraiment</strong> : pas avec des slogans, mais avec des échanges réguliers et ouverts.</li>
+        <li><strong>Simplifier</strong> : pour rendre la vie des Français à l'étranger plus fluide, plus claire, plus juste.</li>
+        <li><strong>Agir concrètement</strong> : sur les sujets qui comptent pour vous — l'éducation, la santé, l'emploi, les démarches, la fiscalité.</li>
+      </ul>
     </section>
 
     <section id="contact" class="card">
-      <h2>Contact & Échange</h2>
+      <h2>Contact & Réseaux</h2>
       <p>Vous souhaitez échanger, poser une question ou partager une idée ? Je suis à l'écoute.</p>
-      <p>📧 <strong>Email :</strong> alexisvallee2025@gmail.com<br>
-         📱 <strong>Téléphone :</strong> +33 6 65 98 82 36</p>
       
       <div class="social-links">
         <a href="https://www.linkedin.com/in/alexisvallee" class="social-button linkedin" target="_blank">LinkedIn</a>
         <a href="https://www.instagram.com/alexisvallee2025" class="social-button instagram" target="_blank">Instagram</a>
-        <a href="https://medium.com/@alexisvallee" class="social-button medium" target="_blank">Medium</a>
+        <a href="https://medium.com/@valleealexis24" class="social-button medium" target="_blank">Medium</a>
       </div>
     </section>
   </main>
