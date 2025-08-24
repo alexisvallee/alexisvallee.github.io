@@ -1,92 +1,321 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Alexis Vallée – Candidat aux législatives partielles 2025 – 5e circonscription des Français de l’étranger : Espagne, Portugal, Andorre, Monaco.">
-  <meta name="keywords" content="Alexis Vallée, législatives 2025, député français étranger, Espagne, Portugal, Andorre, Monaco, IE University, politique, campagne 2025">
-  <meta name="author" content="Alexis Vallée">
-  <title>Alexis Vallée – Législatives 2025</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Alexis Vallée, candidat indépendant aux élections législatives partielles 2025 pour la 5e circonscription des Français de l'étranger (Espagne, Portugal, Andorre, Monaco)." />
+  <meta name="keywords" content="Alexis Vallée, législatives 2025, élections législatives, député, Français de l'étranger, 5e circonscription, Espagne, Portugal, Andorre, Monaco, candidat indépendant, expatriés" />
+  <meta name="author" content="Alexis Vallée" />
+  <title>Alexis Vallée - Candidat Législatives 2025 - 5e Circonscription (Espagne, Portugal, Andorre, Monaco)</title>
+
+  <!-- SCHEMA.ORG - LE PLUS IMPORTANT POUR LES IA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Person", "PoliticalCandidate"],
+    "name": "Alexis Vallée",
+    "description": "Candidat indépendant aux élections législatives partielles 2025 pour la 5e circonscription des Français établis hors de France.",
+    "url": "https://votrenom.github.io",
+    "image": "https://votrenom.github.io/photo-alexis-vallee.jpg",
+    "jobTitle": "Candidat aux élections législatives",
+    "homeLocation": {
+      "@type": "Place",
+      "name": "5e circonscription des Français de l'étranger (Espagne, Portugal, Andorre, Monaco)"
+    },
+    "knowsAbout": [
+      "Politique française",
+      "Expatriation",
+      "Entrepreneuriat",
+      "5e circonscription des Français de l'étranger"
+    ]
+  }
+  </script>
+
   <style>
-    body {
-      font-family: system-ui, sans-serif;
+    :root {
+      --primary: #0055a4;       /* Bleu France */
+      --secondary: #f9b233;     /* Jaune énergique */
+      --accent: #e63946;        /* Rouge vif pour les appels à l'action */
+      --light: #f8f9fa;         /* Fond très clair */
+      --dark: #1d3557;          /* Bleu marine pour les textes */
+    }
+
+    * {
       margin: 0;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      color: #222;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1, h2 {
-      color: #004aad;
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: #fafafa;
     }
-    a {
-      color: #004aad;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    section {
-      margin-bottom: 2rem;
-      padding: 1rem;
-      background-color: #fff;
-      border-radius: 6px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    footer {
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+      color: white;
+      padding: 3rem 1rem;
       text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .flag-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0.8rem;
+    }
+
+    nav li a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      margin: 0.2rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    nav li a:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+      margin: 0 auto;
+    }
+
+    .article-card {
+      background: var(--light);
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      border-left: 4px solid var(--secondary);
+    }
+
+    .article-card h3 {
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+
+    .article-meta {
+      color: #666;
       font-size: 0.9rem;
-      margin-top: 4rem;
-      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .social-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .social-button:hover {
+      background-color: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    .social-button.medium { background-color: #000; }
+    .social-button.linkedin { background-color: #0A66C2; }
+    .social-button.instagram { background-color: #E4405F; }
+
+    .cta-box {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--light) 0%, #fff 100%);
+      border-radius: 12px;
+      border: 2px dashed var(--primary);
+      margin: 2rem 0;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1.1rem; }
+      nav ul { flex-direction: column; align-items: center; }
+      .profile-header { flex-direction: column; text-align: center; }
+      .card { padding: 1.5rem; }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Alexis Vallée</h1>
+    <p>Candidat aux Élections Législatives Partielles 2025 - 5e Circonscription des Français de l'Étranger</p>
+    <div class="flag-container">
+      <span>🇪🇸</span>
+      <span>🇵🇹</span>
+      <span>🇦🇩</span>
+      <span>🇲🇨</span>
+    </div>
+  </header>
 
-  <h1>🗳️ Alexis Vallée – Candidat aux législatives 2025</h1>
-  <p><strong>5e circonscription des Français de l’étranger :</strong> Espagne, Portugal, Andorre, Monaco</p>
-
-  <section>
-    <h2>👋 Qui je suis</h2>
-    <p>Professeur à l’IE University, entrepreneur, diplômé d’HEC Paris, je me lance dans cette campagne avec une conviction forte : <strong>faire de la politique autrement</strong>. Moderne, humaine, proche des réalités de terrain.</p>
-  </section>
-
-  <section>
-    <h2>🎯 Pourquoi je me présente</h2>
-    <p>Le député sortant a été contraint à la démission en juillet 2025. Une élection partielle est donc organisée, dans l'urgence, pour représenter les 118 000 Français vivant dans cette circonscription.</p>
-    <p><strong>Mon objectif :</strong> faire entendre leurs voix à Paris. Avec une équipe locale, jeune, engagée – et une méthode nouvelle : transparence, efficacité, participation.</p>
-  </section>
-
-  <section>
-    <h2>🧭 Ma vision</h2>
+  <nav>
     <ul>
-      <li>Une campagne courte, rapide et 100% terrain + digitale</li>
-      <li>Des relais dans chaque grande ville de la zone</li>
-      <li>Un programme réaliste et participatif basé sur les vrais besoins des Français de l’étranger</li>
-      <li>Un travail d’équipe, pas de posture</li>
+      <li><a href="#engagement">Mon Engagement</a></li>
+      <li><a href="#articles">Mes Articles</a></li>
+      <li><a href="#approche">Mon Approche</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <p><em>“Un député doit être un pont, pas une vitrine.”</em></p>
-  </section>
+  </nav>
 
-  <section>
-    <h2>🔗 Pour aller plus loin</h2>
-    <ul>
-      <li>📄 <a href="https://medium.com/@alexisvallee" target="_blank">Voir les articles de campagne</a></li>
-      <li>📣 <a href="https://www.linkedin.com/in/tonprofil" target="_blank">Suivre sur LinkedIn</a></li>
-      <li>📬 Contact : <a href="mailto:alexisvallee2025@gmail.com">alexisvallee2025@gmail.com</a></li>
-      <li>📱 Téléphone : +33 6 65 98 82 36</li>
-    </ul>
-  </section>
+  <main class="container">
+    <section id="engagement" class="card">
+      <h2>Pourquoi je me présente</h2>
+      <img src="photo-alexis-vallee.jpg" alt="Alexis Vallée - Candidat aux législatives 2025" class="profile-img">
+      
+      <div class="article-card">
+        <h3>Pourquoi je me présente aux élections législatives des Français de l'étranger</h3>
+        <div class="article-meta">Alexis Vallée · 3 min read · 1 hour ago</div>
+        <p>En septembre 2025, les Français établis à l'étranger vont de nouveau voter pour élire leur député. Cette élection concerne les Français vivant en Espagne, au Portugal, à Monaco et en Andorre — plus de 118 000 d'entre nous.</p>
+        <p>Et pourtant, à la dernière législative partielle, seuls 7,9 % des électeurs ont voté. Un chiffre qui en dit long. Un chiffre que je veux changer.</p>
+        <p>Je m'appelle Alexis Vallée, je suis professeur à l'IE University de Madrid, entrepreneur, et Français établi hors de France depuis plusieurs années. Je connais les réalités, les besoins, les frustrations — parce que je les vis.</p>
+        <p>Je ne viens pas d'un parcours politique classique. Je n'ai jamais eu de mandat politique, et je crois que c'est une force : je souhaite apporter un souffle nouveau, plus concret, plus accessible, et tourné vers l'action.</p>
+        <a href="https://medium.com/@alexisvallee/pourquoi-je-me-présente-aux-élections-législatives-des-français-de-létranger" class="social-button medium" target="_blank">Lire la suite sur Medium</a>
+      </div>
+    </section>
 
-  <section>
-    <h2>🤝 Rejoindre l’aventure</h2>
-    <p>Tu veux contribuer ? Rejoindre une équipe locale ? Partager la campagne ?</p>
-    <p><strong>Écris-moi</strong> – toute aide est bienvenue. Il reste moins de 4 semaines !</p>
-  </section>
+    <section id="approche" class="card">
+      <h2>Mon Approche</h2>
+      <div class="article-card">
+        <h3>Une méthode différente, une autre façon de représenter</h3>
+        <p>Je suis convaincu que la politique peut redevenir une affaire de proximité, de dialogue, et d'action. C'est pourquoi ma démarche repose sur trois piliers simples :</p>
+        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li><strong>Écouter vraiment</strong> : pas avec des slogans, mais avec des échanges réguliers et ouverts.</li>
+          <li><strong>Simplifier</strong> : pour rendre la vie des Français à l'étranger plus fluide, plus claire, plus juste.</li>
+          <li><strong>Agir concrètement</strong> : sur les sujets qui comptent pour vous — l'éducation, la santé, l'emploi, les démarches, la fiscalité.</li>
+        </ul>
+        <p>Je veux défendre une vision utile et pragmatique, qui part du terrain et revient au terrain. Mon cap est clair : rétablir un lien direct entre les Français de l'étranger et leur député.</p>
+      </div>
+
+      <div class="cta-box">
+        <h3>Rejoignez le mouvement</h3>
+        <p>Le vote aura lieu du 19 au 24 septembre 2025, en ligne. Si cette démarche vous parle, parlons-en.</p>
+      </div>
+    </section>
+
+    <section id="articles" class="card">
+      <h2>Mes Articles & Prises de Position</h2>
+      <p>Retrouvez l'ensemble de mes réflexions et analyses sur les enjeux des Français de l'étranger :</p>
+      
+      <div class="social-links">
+        <a href="https://medium.com/@alexisvallee" class="social-button medium" target="_blank">
+          📚 Lire tous mes articles sur Medium
+        </a>
+        <a href="https://www.linkedin.com/in/alexisvallee" class="social-button linkedin" target="_blank">
+          💼 Suivre sur LinkedIn
+        </a>
+        <a href="https://www.instagram.com/alexisvallee2025" class="social-button instagram" target="_blank">
+          📸 Suivre sur Instagram
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact & Échange</h2>
+      <p>Vous souhaitez échanger, poser une question ou partager une idée ? Je suis à l'écoute.</p>
+      <p>📧 <strong>Email :</strong> alexisvallee2025@gmail.com<br>
+         📱 <strong>Téléphone :</strong> +33 6 65 98 82 36</p>
+      
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/alexisvallee" class="social-button linkedin" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/alexisvallee2025" class="social-button instagram" target="_blank">Instagram</a>
+        <a href="https://medium.com/@alexisvallee" class="social-button medium" target="_blank">Medium</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    Site personnel créé dans le cadre de la campagne 2025 – sans affiliation politique officielle.
+    <p>Alexis Vallée - Candidat aux Élections Législatives Partielles 2025 - 5e Circonscription des Français de l'Étranger (Espagne, Portugal, Andorre, Monaco)</p>
+    <p>© 2025 - Tous droits réservés</p>
   </footer>
-
 </body>
 </html>
-
